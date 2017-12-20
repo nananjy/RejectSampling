@@ -27,8 +27,8 @@ public class BasicDirectedGraph {
 	public BasicDirectedGraph(String nodeFileName, String edgeFileName) {
 		this.vertexId = 0;//初始化节点编号
 		this.vertexList = new ArrayList<BaseVertex>();//初始化节点列表
-		String nodefilepath = FilePathUtils.GenFilePath(nodeFileName);//获得节点文件路径
-		String edgefilepath = FilePathUtils.GenFilePath(edgeFileName);//获得边文件路径
+		String nodefilepath = FilePathUtils.generateFilePath(nodeFileName);//获得节点文件路径
+		String edgefilepath = FilePathUtils.generateFilePath(edgeFileName);//获得边文件路径
 		this.vertexMap = new HashMap<String, Integer>();//初始化节点、编号映射
 		try {
 			BufferedReader nodebr = new BufferedReader(new FileReader(nodefilepath));
