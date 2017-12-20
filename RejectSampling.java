@@ -5,9 +5,9 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import RejectSampling.BaseEdge;
-import RejectSampling.BaseVertex;
-import RejectSampling.BasicDirectedGraph;
+import DirectedGraph.BaseEdge;
+import DirectedGraph.BaseVertex;
+import DirectedGraph.BasicDirectedGraph;
 import Utils.FilePathUtils;
 
 /**
