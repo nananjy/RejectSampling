@@ -49,9 +49,9 @@ public class RejectSampling {
 		//生成从父节点开始的节点列表
 		generateVertexList();
 		//读取questionFile，获取待查询节点、待查询的状态及证据节点的状态
-		String questingFilePath = FilePathUtils.GenFilePath(questionFileName);
+		String questionFilePath = FilePathUtils.generateFilePath(questionFileName);
 		try{
-			BufferedReader br = new BufferedReader(new FileReader(questingFilePath));
+			BufferedReader br = new BufferedReader(new FileReader(questionFilePath));
 			String tempStr = br.readLine();
 			String[] goalArcs = tempStr.split(" ");
 			if(goalArcs.length != 2){
